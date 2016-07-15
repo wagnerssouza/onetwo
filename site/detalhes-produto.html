@@ -62,12 +62,47 @@
         
         <div class="row">
           <div class="col-sm-6 img">
+          <div>
+            <a href="#" class="slide-esquerda"></a>
             <img src="content/images/produtos/ellus/large_produto1.jpg" alt="" title="" />
+            <a href="#" class="slide-direita"></a>
           </div>
+          <ul class="galeria-thumb">
+            <li><a href="#"><img src="content/images/thumb-produto.jpg" alt=""></a></li>
+            <li><a href="#"><img src="content/images/thumb-produto.jpg" alt=""></a></li>
+            <li><a href="#"><img src="content/images/thumb-produto.jpg" alt=""></a></li>
+            <li><a href="#"><img src="content/images/thumb-produto.jpg" alt=""></a></li>
+            <li><a href="#"><img src="content/images/thumb-produto.jpg" alt=""></a></li>
+            <li><a href="#"><img src="content/images/thumb-produto.jpg" alt=""></a></li>
+            <li><a href="#"><img src="content/images/thumb-produto.jpg" alt=""></a></li>
+          </ul>
+          </div>
+
           <div class="col-sm-6 info">
               <p><a href="#">ELLUS</a></p>
               <h2 class="titulo">Casaco Liquid Twill Trench Coat</h2>
-              
+
+
+
+              <div class="social">
+                <a href="#" class="favoritar">Favoritar</a> 
+                <ul class="redes-sociais">
+                   <li><a href="#"><img src="content/images/icone-whatsapp.jpg" alt=""></a></li>
+                   <li><a href="#"><img src="content/images/icone-facebook.jpg" alt=""></a></li>
+                   <li><a href="#"><img src="content/images/icone-twitter.jpg" alt=""></a></li>
+                   <li><a href="#"><img src="content/images/icone-pinterest.jpg" alt=""></a></li>
+                   <li><a href="#"><img src="content/images/icone-google-plus.jpg" alt=""></a></li>
+                   <li><a href="#"><img src="content/images/icone-email.jpg" alt=""></a></li>
+                </ul>             
+  
+
+
+
+              </div>
+
+
+
+
               <dl>
                 <dt>Descrição</dt>
                 <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a pellentesque libero. Sed nunc ipsum, feugiat a neque.</dd>
@@ -108,14 +143,10 @@
                 </dd>
               </dl>
 
-              <p><strong class="preco">R$ 299,00</strong></p>
+              <p><span class="entre-preco">de</span> <strong class="preco"> R$ 299,00</strong> <span class="entre-preco">a</span> <strong class="preco"> R$ 400,00</strong></p>
 
               <div class="reservar-content">
-                <p>
-                  <strong>A ser retirado em:</strong><br />
-                  Colinas Shopping, lj 0, São José dos Campos
-                </p>
-                <br />
+                
                 <div class="row">
                   <div class="col-sm-6">
                     <button data-toggle="modal" data-target=".modal-reservar">Reservar</button>
@@ -124,6 +155,8 @@
                     <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Você reserva a peça pelo site da OneTwo e retira direto na loja física">como funciona?</a>
                   </div>
                 </div>
+
+
               </div>
           </div>
         </div>
@@ -189,19 +222,50 @@
     </footer>
 
     <div class="modal fade modal-reservar" tabindex="-1">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            Reservar
-          </div>
-          <div class="modal-body">
-            <p>Para finalizar o processo de reserva desse produto na loja, baixe o app OneTwo</p>
-          </div>
-          <div class="modal-footer">
-            <a href="https://play.google.com/store/apps/details?id=br.com.onetwo" target="_blank" class="ico-googleplay">Baixar no Google play</a>
-            <a href="https://itunes.apple.com/br/app/onetwo-promocoes-em-shopping/id785938884?mt=8&ign-mpt=uo%3D4" target="_blank" class="ico-appstore">Baixar no App Store</a>
-          </div>
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content modal-content-reservas">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4>Escolha uma loja</h4>
+            </div>
+            <div class="modal-body">
+              <ul class="lista-lojas">
+              <!-- loja 1 -->
+                <li>
+                  <div class="col-sm-6 infos">
+                    <img src="content/images/loja-ellus.jpg" class="img-lojas-reservas" />
+                    <div class="info-end">
+                    <h4>Ellus</h4>
+                    <p class="endereco">Rua Lorem ipsum, xxx bairro Sao jose dos campos, SP</p>                  
+                    </div>
+                  </div>
+                  <div class="col-sm-6 box-preco-reserva">
+                    <span class="preco-reserva">R$ 300,00</span>
+                    <a href="#" class="bt-reservar">Reservar</a>
+                  </div>
+                </li>
+                <!-- loja 1 -->
+
+                <!-- loja 2 -->
+                <li>
+                  <div class="col-sm-6 infos">
+                    <img src="content/images/loja-ellus.jpg" class="img-lojas-reservas" />
+                    <div class="info-end">
+                    <h4>Ellus</h4>
+                    <p class="endereco">Rua Lorem ipsum, xxx bairro Sao jose dos campos, SP</p>                  
+                    </div>
+                  </div>
+                  <div class="col-sm-6 box-preco-reserva">
+                    <span class="preco-reserva">R$ 300,00</span>
+                    <a href="#" class="bt-reservar">Reservar</a>
+                  </div>
+                </li>
+                <!-- loja 2 -->
+
+
+              </ul>
+            </div>
+            
         </div>
       </div>
     </div>

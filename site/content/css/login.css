@@ -1,0 +1,42 @@
+body{background-image: url(../images/login/bg-login.jpg);background-repeat: no-repeat;background-size: cover;background-position: center top;}
+.box-sign-up{margin: 0 auto;float: none;}
+.top-sign-up{background-color: #fff;color: #000;text-align: center;padding: 40px 0;border-radius: 5px;}
+.top-sign-up h2{font-size: 35px;letter-spacing: 1px;font-weight: bold;text-transform: uppercase;margin-top: 0;}
+.top-sign-up .click-sign-up{font-size: 18px;}
+.top-sign-up .click-login{text-decoration: underline;color: #fff;}
+.form-sign-up{text-align: center;padding: 40px 0;border-radius: 5px;background-color: #fff;float: left;width: 100%;box-shadow: 0px 2px 8px #222020;}
+.login-facebook {display: block;width: 100%;height: 71px;background: url(../images/cadastro/login-facebook.png) center no-repeat;margin: 0 auto;background-size: contain;}
+.option-form{font-size: 22px;color: #666;text-transform: uppercase;background-color: #fff;z-index: 2;display: inline-block;padding: 0 15px;position: relative;margin: 30px 0;float: none;}
+.line-login {border-bottom: 1px #B9B9B9 solid;display: block;margin: 0 auto;float: none;position: relative;top: -45px;}
+.form-sign-up h3{text-transform: uppercase;margin: 0 0 40px 0;}
+.box-sign-up .col-md-11{float: none;margin: 0 auto;}
+.create-account{color: #fff;background: #4c007d;text-transform: uppercase;border: none;border-radius: 5px;font-weight: bold;float: right;padding: 20px 30px;letter-spacing: 1px;font-size: 18px;}
+.input-text {float: none;height: 80px;font-size: 18px;margin-bottom: 20px;width: 100%;padding-left: 75px;border: 1px #CCC solid; color:#444;}
+.input-email {background-image: url(../images/login/icon-email.jpg);background-repeat: no-repeat;background-position: 25px center;}
+.input-senha {background-image: url(../images/login/icon-senha.jpg);background-repeat: no-repeat;background-position: 25px center;}
+.esqueci-senha{font-size: 18px;float: left;margin-top: 15px; color: #440684;}
+.titulo-login{font-size: 45px;margin: 0 0 30px 0;text-transform: uppercase;}
+.col-md-11.nao-tem-conta{display: inline-block;margin-top: 45px;}
+.nao-tem-conta p{display: inherit;font-size: 22px;}
+.nao-tem-conta a{float: none;color: #440684;}
+.erro p{text-align: left;color: #ca0000;font-size: 22px;}
+.recuperar-senha {color: #FFF;background: #4C007D !important;text-transform: uppercase;border: none;border-radius: 5px !important;font-weight: bold;float: right;padding: 15px 15px !important;letter-spacing: 1px;font-size: 18px;float: left;width: auto !important;display: inherit;}
+.recuperar-senha-email{float: none;margin: 0;padding: 0;}
+.bt-recuperar{margin: 0;padding: 0;}
+.campo-email-recuperar{margin-bottom: 25px;}
+.mensagem-recuperacao{margin-top: -25px;}
+.mensagem-recuperacao p{font-size: 16px;}
+@media (max-width:991px){
+	.create-account {display: initial;float: none;}
+	.esqueci-senha {float: none;display: block;}
+	.form-sign-up {padding: 40px 20px;}
+}
+@media (min-width:768px){
+}
+@media (max-width:767px){
+	.banner .container{padding: 0;}
+	.col-md-8.box-sign-up{padding-right: 5px; padding-left: 5px;}
+	.form-sign-up-filds .col-md-11{padding: 0;}
+}
+@media (max-width:375px){
+}

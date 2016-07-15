@@ -36,11 +36,12 @@ section.topo-loja header.menu{ background: rgba(68,6,132,0.85); }
 section.topo-loja .nome-loja{ height: 412px; position: relative; }
 section.topo-loja .nome-loja h1{ position: absolute; bottom: 0px; background: rgba(68,6,132,0.85); color: #fff; font-size: 45px; font-weight: 500; text-transform: uppercase; padding: 30px 60px; }
 header.menu .navbar-brand{ margin-left: 0px !important; }
-header.menu .onetwo-logo{ height:97px; width: 72px; background: url(../images/logo.png) center no-repeat; text-indent:-10000px; }
+header.menu.navbar{ margin-bottom: 0; }
+header.menu .onetwo-logo{ height:56px; width: 42px; background: url(../images/logo.png) center no-repeat; text-indent:-10000px; margin-right: 30px; }
 header.menu h1{ margin: 0px; }
 header.menu .nav>li>a{ font-size: 20px; color: #fff; font-weight: 500; margin-top: 20px; }
-header.menu .container{ padding: 25px 15px; }
-section.topo-home header.menu .container .box{ border-bottom: solid 1px #c39eea; padding-bottom: 40px; }
+header.menu .container{ padding: 25px 15px 0 15px; margin-bottom: 25px; }
+section.topo-home header.menu .container .box{ padding-bottom: 40px; }
 section.banner{ margin-top: 10px; }
 section.banner .info{ margin: 25px 0px; padding-left: 0px; padding-right: 0px; }
 section.banner .info .reserve-produtos{ font-size: 27px; text-transform: uppercase; }
@@ -78,34 +79,51 @@ section.lojas .produtos .item .info{ border: solid 1px #d2d2d2; border-top: 0px;
 section.lojas .produtos .item .info a{ color: #111; text-decoration: none; font-size: 16px; font-weight: 400; text-transform: uppercase; display: inline-block; width: 100%;  padding: 15px; }
 section.lojas .produtos .item .info a strong{ line-height: 30px; }
 section.lojas .produtos .item .disconto{ position: absolute; top: 0px; right: 5%; background: url(../images/selo-bg.png) no-repeat center; width: 41px; height: 45px; line-height: 35px; font-size: 13px; font-weight: 400; color: #fff; text-align: center; }
-
 section.lojas .endereco{ border-bottom: solid 1px #d2d2d2; margin: 30px 0; }
 section.lojas .endereco dt{ color: #440684; font-size: 20px; font-weight: 600; text-transform: uppercase; margin-bottom: 15px; }
 section.lojas .endereco dd{ font-size: 16px; color: #444; font-weight: 400; }
 section.lojas .endereco dd strong{ color: #440684; font-weight: 600; text-transform: uppercase; }
-
 section.topo-breadcrumb .breadcrumb{ color: #444444; font-size: 16px; font-weight: 400; padding: 0px; background: none; margin: 20px 0px; }
 section.topo-breadcrumb .breadcrumb li a{ color: #440684; text-decoration: underline; }
 section.topo-breadcrumb .breadcrumb>li+li:before{ content: ">"; color: #444444; }
 section.topo-breadcrumb .breadcrumb>li.no-content+li:before{ content: none; }
-
 section.produto .img img{ border:solid 1px #d2d2d2; width: 100%; }
 section.produto .info .radio-tamanho{ display: inline-block; margin-right: 5px; margin-bottom: 5px; }
 section.produto .info .radio-tamanho input[type="radio"] { text-indent: -9999px; position: absolute; left: -9999px; }
 section.produto .info .radio-tamanho input[type="radio"]+span { -webkit-appearance: none; color: #440684; font-weight: 400; background-color: #fafafa; border: 1px solid #440684; width: 42px; height: 42px; line-height: 42px; text-align: center; border-radius: 8px; display: inline-block; cursor: pointer; }
 section.produto .info .radio-tamanho input[type="radio"]:checked+span { background-color: #440684; color: #eee; }
 section.produto .info a{ color: #440684; text-decoration: underline; font-size: 16px; font-weight: 400; }
-section.produto .info .titulo{ font-size: 35px; margin: 0px; text-transform: uppercase; font-weight: 700; }
 section.produto .info dl{ margin: 30px 0px; }
 section.produto .info dt{ color: #111; font-size: 18px; text-transform: uppercase; margin-bottom: 5px; }
 section.produto .info dd{ color: #444; font-weight: 400; font-size: 16px; }
-section.produto .info .preco{ font-size: 35px; font-weight: 700; color: #111; margin: 20px 0px; display: block; }
-section.produto .info .reservar-content{ background: #ededed; border: solid 1px #d7d7d7; padding: 30px; color: #444; font-size: 14px; font-weight: 400; }
+section.produto .info .preco{ font-size: 35px; font-weight: 700; color: #111; margin: 20px 0px; display: inline; }
+section.produto .info .reservar-content{ padding: 0px; margin: 0; color: #444; font-size: 14px; font-weight: 400; }
 section.produto .info .reservar-content strong{ color: #440684; text-transform: uppercase; font-size: 16px; }
 section.produto .info .reservar-content a{ font-size: 13px; display: inline-block; margin: 18px 0px; }
 section.produto .info .reservar-content button{ background: #440684; border-radius: 8px; padding: 15px; width: 100%; color: #fff; font-size: 20px; font-weight: 700; text-transform: uppercase; border: none; }
-
-
+section.produto .entre-preco{margin: 0 5px;font-size: 18px;} 
+section.produto .favoritar{color: #440685 !important;text-decoration: none !important;border: 1px #440685 solid;padding: 8px 15px 8px 40px;background: url(../images/icone-favoritar.png) no-repeat 10px;}
+section.produto .favoritar{color: #440685 !important;text-decoration: none !important;float: left;margin-right: 25px;margin-bottom: 15px;}
+section.produto .redes-sociais{}
+section.produto .redes-sociais li{float: left;list-style-type: none;}
+section.produto .social {display: inline-block;width: 100%;}
+section.produto .galeria-thumb{margin: 10px 0 0 0; padding: 0; display: inline-block;}
+section.produto .galeria-thumb li{ float: left; list-style-type: none; margin-right:1%; width: 13.4%; }
+section.produto .galeria-thumb li:last-child{ margin-right: 0 !important;}
+section.produto .slide-direita {background: url(../images/icone-direita.png) no-repeat center center;position: absolute;height: 80%;width: 23px;top: 0;right: 22px;}
+section.produto .slide-esquerda {background: url(../images/icone-esquerda.png) no-repeat center center;position: absolute;height: 80%;width: 23px;top: 0;left: 22px;}
+.lista-lojas{padding: 0;}
+.lista-lojas li{list-style-type: none;display: inline-block;margin-bottom: 20px;border-bottom: 1px #CCC solid;}
+.lista-lojas li .col-sm-6.infos{border-right: 1px #ccc solid;margin-top: 15px;margin-bottom: 20px;}
+.box-preco-reserva{margin-top: 25px;}
+.img-lojas-reservas{float: left;margin-right: 15px;}
+.info-end{display: inline-table;width: 70%;position: relative;top: -13px;}
+.bt-reservar{color: #fff;background: #440684;display: inline-block;padding: 10px 15px;border-radius: 5px;}
+.bt-reservar:hover{color: #fff;text-decoration: none;}
+span.preco-reserva {margin-right: 25px;}
+.lista-lojas p{font-size: 14px;margin: 0;}
+.modal-content-reservas{padding: 0 !important;}
+.modal-content-reservas .modal-header{background: #ebebeb;} 
 footer.footer{ background: #440684; color: #fff; font-size: 14px; font-weight: 400; padding-top: 70px; padding-bottom: 70px; margin-top: 20px; }
 footer.footer dt{ font-size: 16px; font-weight: 700px; text-transform: uppercase; }
 footer.footer dd{ margin: 0px; }
@@ -116,21 +134,119 @@ footer.footer .ico-facebook,
 footer.footer .ico-twitter,
 footer.footer .ico-instagram{ margin-top: 5px; margin-right: 5px; }
 
+.form-busca{position: relative;top: 10px;}
+.header-buscar{border: 1px #b7b7b7 solid;font-weight: bold;border-radius: 5px;font-size: 14px;color: #440684;padding: 10px;float: left;width: 70%;outline: none;}
+::-webkit-input-placeholder {color: #440684;}
+.submit-lupa {background: #FFF url(../images/header-lupa.png) no-repeat center;width: 21px;height: 21px;text-indent: -99999px;border: none;display: block;padding: 14px;margin-left: -35px;float: left;margin-top: 7px;}
+.menu-nav{background: #4c007d;}
+.menu-horizontal{position: relative;}
+.menu-horizontal li{position: static;}
+.menu-horizontal li:hover{background: #fff;color: #4c007d;}
+.menu-horizontal li:hover > a{ color: #4c007d;font-weight: 400;}
+.menu-horizontal li:hover > .submenu-header{display: block;}
+.menu-horizontal li a{text-transform: uppercase;color: #fff;text-decoration: none;font-size: 14px;}
+.menu-horizontal li a:hover{color: #4c007d;}
+.box-right{ width: 80%;}
+.box-logo{width: 20%;}
+.menu-login{display: inline-block;margin: 20px 0 0 11px;padding: 0;}
+.menu-login li{float: left;list-style-type: none;}
+.menu-login li a{padding: 10px;font-size: 13px;}
+.link-login{color: #fff;text-decoration: underline;}
+.link-login:hover{color: #fff;text-decoration: none;}
+.link-cadastro{color: #fff;border: 1px #fff solid;border-radius: 5px;}
+.link-cadastro:hover{color: #fff;}
+.nav > li.no-menu{display: none;}
+.submenu-header{display: none;background-color: #fff; width: 100%;position: absolute;z-index: 2;left: 0;padding: 10px 15px 25px;box-sizing: border-box;}
+.submenu-header ul{margin: 0;padding: 0;}
+.submenu-header ul li{list-style-type: none;}
+.submenu-header ul li a{color: #4c007d;font-size: 14px;text-transform: none;font-weight: 400;}
+.submenu-header ul li a:hover{text-decoration: underline;}
+.submenu-header h3{font-size: 16px;color: #000;text-transform: uppercase;}
+.menus-categorias {float: left;margin-right: 50px;}
+.lista-categorias{ margin-bottom: 15px !important;}
+.sub-produtos, .sub-lojas{float: left;}
+.sub-produtos{margin-right: 45px;}
+.todas-lojas{margin-top: 10px;}
+.todas-lojas a{text-decoration: underline !important;}
+.img-submenu{ float: right; width: 100%;position: absolute;max-width: 280px;right: 0;top: 0;}
+.cesta-pedidos {background: url(../images/cesta-pedidos.png) no-repeat;position: relative;top: -7px;}
+.qtd-pedidos {background-color: #9D30C4;color: #FFF;font-weight: bold;padding: 3px 5px;position: relative;border-radius: 9px;top: -10px;left: 2px;}
+.texto-busca{color: #440684;}
+
+
+
+
+
+
+.resultado-escolha {
+  margin: 30px 0 20px 0;
+  display: inline-block;
+}
+
+
+.resultado-escolha li{
+    float: left;
+    list-style-type:none;
+    margin-right: 20px; 
+}
+
+.resultado-escolha li a{
+text-decoration: none;
+color: #000;
+font-size: 24px;
+text-transform: uppercase;
+
+}
+.resultado-escolha li a:hover{
+text-decoration: none;
+}
+.resultado-escolha li a:hover strong{
+border-bottom: 3px #440684 solid;
+padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
 @media (max-width:991px){
     section.banner .botoes-app{ padding-top: 10px }
     section.banner .img{ text-align: center; }
     section.banner .img img{ position: relative; }
     section.lojas .listagem .botao a{ padding-left: 10px; padding-right: 10px; }
+    .box-logo{width: auto;}
+
+    section.produto .redes-sociais {display: inline-block;padding: 0;}
+    .bt-reservar {margin-bottom: 25px;}
+    .resultado-escolha{
+    
+    padding: 0;
+}
+
 }
 
 @media (min-width:768px){
     section.banner .img{ min-height: 360px; }
-
     header.menu .nav>li>a:focus,
     header.menu .nav>li>a:hover{ background: none; }
+    .botoes-app-footer .ico-googleplay{margin-bottom: 15px;}
 }
 
 @media (max-width:767px){
+  section.produto .redes-sociais {display: inline-block;padding: 0;}
+    .menu-horizontal li:hover > .submenu-header{display: none;}
+    .form-busca {position: relative;left: 0;  }
+    .header-buscar {width: 94%;     }
+    .box-right {  display: inline;
+    }
+    .menu-login{ display: none;
+    }
+    .login-menu-tablet-mobile{border-top: 1px #fff solid;margin-top: 20px;padding-top: 20px;  }
+    .nav > li.no-menu{display: block;}
+
     #mapa-loja{ height: 526px; }
 
     header.menu .onetwo-logo{ height:53px; width: 40px; background: url(../images/logo_menor.png) center no-repeat !important; }
@@ -139,11 +255,13 @@ footer.footer .ico-instagram{ margin-top: 5px; margin-right: 5px; }
     section.banner .info .reserve-produtos{ font-size: 21px; }
     section.banner .info .baixe-agora{ font-size: 14px; }
     section.banner .info .encontre-lojas{ font-size: 35px; }
-    .ico-googleplay{ margin-right: 0px; margin-bottom: 5px; }
+    .ico-googleplay{ margin-right: 0px; margin-bottom: 15px; display: block;}
+    .ico-appstore{ margin-bottom: 15px; }
     section.lojas .destaque h2{ font-size: 35px; }
     section.lojas .pesquisa dd ul li{ display: inline-block; padding-right: 10px; }
     section.lojas .listagem .botao{ text-align: center !important; }
     section.lojas .listagem .botao a{ margin-top: 0px !important; }
+
 }
 
 @media (max-width:375px){

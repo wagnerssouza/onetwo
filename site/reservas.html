@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OneTwo Shopping App</title>
+    <link href="content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400" rel="stylesheet" type="text/css">
+    <link href="content/css/style.css" rel="stylesheet" />
+    <link href="content/css/reservas.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="content/js/jquery-1.9.1.min.js"></script>
+    <script src="content/js/jquery-ui.min.js"></script>
+    <script src="content/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcRQ9w5hsrvN7zpEdh-oTj-fCPYTeKR9A&region=BR"></script>
+    <script>
+      var coordenadaX = -23.562451;
+      var coordenadaY = -46.669732;
+      function initialize() {
+        var mapOptions = {
+          zoom: 17,
+          disableDefaultUI: true,
+          zoomControl: false,
+          center: new google.maps.LatLng(coordenadaX, coordenadaY)
+        };
+        var map = new google.maps.Map(document.getElementById('mapa-loja-reserva'), mapOptions);
+
+        //- add mapa
+        var map = new google.maps.Map(document.getElementById('mapa-loja-reserva-2'), mapOptions);
+        var map = new google.maps.Map(document.getElementById('mapa-loja-reserva-3'), mapOptions);
+
+        //- adiciona ponto no mapa
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(coordenadaX, coordenadaY),
+            title: 'Ellus'
+        });
+        marker.setMap(map);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+  <div>
+    <section class="topo-loja">
+      <!-- INICIO MENU -->
+       <header class="menu navbar navbar-inverse navbar-fixed-top navbar-dynamic" role="navigation">
+        <div class="container">
+          <div class="box">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <h1><a class="navbar-brand onetwo-logo" href="home.html">One Two</a></h1>
+            </div>
+            <nav id="menu" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="home.html">INÍCIO</a></li>
+                <li><a href="http://www.onetwo.com.br/">A ONETWO</a></li>
+                <li><a href="#" data-toggle="modal" data-target=".modal-contato">CONTATO</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- FIM MENU -->
+    </section>
+
+    <section class="topo-breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li class="no-content">Você está em: </li>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Minhas Reservas</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reservas">
+      <div class="container">
+        <div class="col-md-12">
+        	<h2>Minhas Reservas</h2>
+        	<p>Lorem ipsum lorem ipsum again never yes ipsum hello hola oi</p>
+        </div>
+
+
+        <div class="col-md-12">
+	        <ul class="lista-reservas">
+
+	        	<!-- produto 1 -->
+	        	<li class="item-reserva col-md-12">
+			        <div class="col-md-7 box-produto">
+				        <div class="col-md-3">
+							<img src="content/images/reservas/img-produto-reserva.jpg" alt="Produto Reservado" title="Produto Reservado" />
+							<div class="col-md-12 validade-reserva">
+								<span class="linha-cima">Reservado até</span>
+								<span>29/05/2015</span>
+							</div>
+					    </div>
+						<div class="col-md-9">
+							<h3 class="nome-produto">Casaco Liquid Twill Trench Coat</h3>
+							<ul class="info-reserva">
+								<li>Data da Reserva: 20/03/2015</li>
+								<li>Tamanho M</li>
+								<li>R$ 59,00</li>
+								<li><strong>Ellus</strong> - Colinas Shopping</li>
+							</ul>
+							<a href="#" class="resposta">1 Resposta</a>
+				        </div>
+				    </div>
+			        <div class="col-md-5 mapa"><div id="mapa-loja-reserva"></div></div>
+		       	</li>
+		       	<!-- Fim produto 1 -->
+				
+				<!-- produto 2 -->
+		       	<li class="item-reserva col-md-12">
+			        <div class="col-md-7 box-produto">
+				        <div class="col-md-3">
+							<img src="content/images/reservas/img-produto-reserva.jpg" alt="Produto Reservado" title="Produto Reservado" />
+							
+					    </div>
+						<div class="col-md-9">
+							<h3 class="nome-produto">Casaco Liquid Twill Trench Coat</h3>
+							<ul class="info-reserva">
+								<li>Data da Reserva: 20/03/2015</li>
+								<li>Tamanho M</li>
+								<li>R$ 59,00</li>
+								<li><strong>Ellus</strong> - Colinas Shopping</li>
+							</ul>
+							<a href="#" class="resposta">1 Resposta</a>
+				        </div>
+				    </div>
+			        <div class="col-md-5 mapa"><div id="mapa-loja-reserva-2"></div></div>
+		       	</li>
+		       	<!-- fim produto 2 -->
+
+		       	<!-- produto 3 -->
+		       	<li class="item-reserva col-md-12">
+			        <div class="col-md-7 box-produto">
+				        <div class="col-md-3">
+							<img src="content/images/reservas/img-produto-reserva.jpg" alt="Produto Reservado" title="Produto Reservado" />				
+					    </div>
+						<div class="col-md-9">
+							<h3 class="nome-produto">Casaco Liquid Twill Trench Coat</h3>
+							<ul class="info-reserva">
+								<li>Data da Reserva: 20/03/2015</li>
+								<li>Tamanho M</li>
+								<li>R$ 59,00</li>
+								<li><strong>Ellus</strong> - Colinas Shopping</li>
+							</ul>
+							<p class="aguardando-resposta">Aguardando Resposta</p>
+				        </div>
+				    </div>
+			        <div class="col-md-5 mapa"><div id="mapa-loja-reserva-3"></div></div>
+		       	</li>
+		       	<!-- fim produto 3 -->
+		    </ul>
+
+			<ul class="lista-reservas-detalhes col-md-12">
+				<!-- produto 1 ver detalhes -->
+				<li class="item-reserva col-md-12">
+					<div class="col-md-7 box-produto">
+					    
+						<div class="col-md-12">
+							<h3 class="nome-produto-detalhes">Casaco Liquid Twill Trench Coat</h3>
+							<ul class="info-reserva">
+								<li>Data da Reserva: 20/03/2015</li>
+								<li>Tamanho M</li>
+								<li>R$ 59,00</li>								
+							</ul>							
+					    </div>
+					</div>
+					<div class="col-md-5">
+						<a href="#" class="ver-detalhes">Ver Detalhes</a>
+					</div>
+				</li>
+				<!-- fim produto ver detalhes 1 -->
+
+				<!-- produto 2 ver detalhes -->
+				<li class="item-reserva col-md-12">
+					<div class="col-md-7 box-produto">
+					    
+						<div class="col-md-12">
+							<h3 class="nome-produto-detalhes">Casaco Liquid Twill Trench Coat</h3>
+							<ul class="info-reserva">
+								<li>Data da Reserva: 20/03/2015</li>
+								<li>Tamanho M</li>
+								<li>R$ 59,00</li>								
+							</ul>							
+					    </div>
+					</div>
+					<div class="col-md-5">
+						<a href="#" class="ver-detalhes">Ver Detalhes</a>
+					</div>
+				</li>
+				<!-- fim produto ver detalhes 2 -->
+	       	</ul>
+
+	       	<div class="col-md-12 mostra-mais">
+	       		<a href="#" class="bt-mostrar-mais">Mostrar mais</a>
+	       	</div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <dl>
+              <dt>Lojas</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">Acessórios Femininos</a></li>
+                  <li><a href="#">Bolsas & Artigos para Viagem</a></li>
+                  <li><a href="#">Calçados</a></li>
+                  <li><a href="#">Moda Feminina</a></li>
+                  <li><a href="#">Moda Masculina</a></li>
+                  <li><a href="#">Moda Unissex</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt>OneTwo</dt>
+              <dd>
+                <ul>
+                  <li><a href="http://www.onetwo.com.br/">Conheça a OneTwo</a></li>
+                  <li><a href="#" data-toggle="modal" data-target=".modal-contato">Contato</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt>Baixe o App</dt>
+              <dd>
+                <ul>
+                  <li><a href="https://play.google.com/store/apps/details?id=br.com.onetwo" target="_blank">Android</a></li>
+                  <li><a href="https://itunes.apple.com/br/app/onetwo-promocoes-em-shopping/id785938884?mt=8&ign-mpt=uo%3D4" target="_blank">Apple iOS</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt>Siga-nos</dt>
+              <dd>
+                <a href="https://www.facebook.com/pages/OneTwo-Mobile-Apps/328120660643310" target="_blank" class="ico-facebook">Facebook</a>
+                <a href="https://twitter.com/OneTwoBR" target="_blank" class="ico-twitter">Twitter</a>
+                <a href="https://instagram.com/onetwoshopping" target="_blank" class="ico-instagram">Instagram</a>
+              </dd>
+            </dl>
+          </div>
+          <div class="col-sm-3">
+            <p>Todos os Direitos Reservados.<br />OneTwo - 2014</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade modal-reservar" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            Reservar
+          </div>
+          <div class="modal-body">
+            <p>Para finalizar o processo de reserva desse produto na loja, baixe o app OneTwo</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://play.google.com/store/apps/details?id=br.com.onetwo" target="_blank" class="ico-googleplay">Baixar no Google play</a>
+            <a href="https://itunes.apple.com/br/app/onetwo-promocoes-em-shopping/id785938884?mt=8&ign-mpt=uo%3D4" target="_blank" class="ico-appstore">Baixar no App Store</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade in modal-contato" tabindex="-1" role="dialog" aria-hidden="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Deixe sua Mensagem!</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                <div id="contact-form-area" align="center">
+                                    <div class="row">
+                                        <form class="form-horizontal" role="form" method="get">
+                                            <div id="success"></div>
+                                            <div class="form-group">
+                                                <label for="inputName" class="col-md-2">Nome</label>
+                                                <div class="col-md-10">
+                                                    <input placeholder="Nome" type="text" class="form-control" id="inputName" name="name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputEmail" class="col-md-2">E-mail</label>
+                                                <div class="col-md-10">
+                                                    <input placeholder="E-mail" type="text" class="form-control" id="inputEmail" name="email">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputMessage" class="col-md-2">Mensagem</label>
+                                                <div class="col-md-10">
+                                                    <textarea placeholder="Mensagem" class="form-control" id="inputMessage" name="message" rows="5" cols="20"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-offset-2 col-md-10">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <button id="send_message" data-loading-text="Enviando..." class="btn btn-primary">
+                                            Enviar
+                                        </button>
+                                    </div>
+                                </div><!-- /.row -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="modal-footer">
+                  <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                      <dl>
+                        <dt>OneTwo</dt>
+                        <dd>
+                          <p><strong>Telefone</strong><br>+55 11 9 5785 8615</p>
+                          <p><strong>E-mail</strong><br>suporte@onetwo.com.br</p>
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="col-md-1"></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{background-image: url(../images/cadastro/bg-cadastro.jpg);background-repeat: no-repeat;background-size: cover;background-position: center top;}
+.box-sign-up{margin: 0 auto;float: none;}
+.top-sign-up{background-color: #4c007d;color: #fff;text-align: center;padding: 40px 0;border-radius: 5px;}
+.top-sign-up h2{font-size: 35px;letter-spacing: 1px;font-weight: bold;text-transform: uppercase;margin-top: 0;}
+.top-sign-up .click-sign-up{font-size: 18px;}
+.top-sign-up .click-login{text-decoration: underline;color: #fff;}
+.form-sign-up{text-align: center;padding: 40px 0;border-radius: 5px;background-color: #fff;float: left;width: 100%;box-shadow: 0px 2px 8px #222020;}
+.login-facebook {display: block;width: 100%;height: 71px;background: url(../images/cadastro/login-facebook.png) center no-repeat;margin: 0 auto;background-size: contain;}
+.option-form{font-size: 22px;color: #666;text-transform: uppercase;background-color: #FAFAFA;z-index: 2;display: inline-block;padding: 0 15px;position: relative;margin: 50px 0 30px 0;float: none;}
+.line-login {border-bottom: 1px #B9B9B9 solid;display: block;margin: 0 auto;float: none;position: relative;top: -45px;}
+.form-sign-up h3{text-transform: uppercase;}
+.input-text {float: none;height: 80px;font-size: 18px;margin-bottom: 20px;width: 100%;padding-left: 15px;border: 1px #CCC solid;color: #444;}
+.form-sign-up-filds .col-md-11{float: none;margin: 0 auto;}
+.create-account{color: #fff;background: #4c007d;text-transform: uppercase;border: none;border-radius: 5px;font-weight: bold;padding: 20px 30px;letter-spacing: 1px;font-size: 18px;}
+.erro{border: 1px #f00 solid;background: #fff5f5;}
+.tooltip-form {border: 1px #A69696 solid;position: absolute;left: 100%;top: 10px;background-color: #F7F7F7;border-radius: 5px;padding: 18px;margin-left: 15px;display: inline-table;text-align: left;}
+.icone-tooltip {background: url(../images/cadastro/icone-tooltip.png) no-repeat;display: block;width: 18px;height: 27px;position: absolute;left: -18px;top: 15px;}
+@media (max-width:991px){
+	.form-sign-up {padding: 40px 20px;}
+	.tooltip-form{display: none;}
+}
+@media (min-width:768px){
+}
+@media (max-width:767px){
+	.banner .container{padding: 0;}
+	.col-md-8.box-sign-up{padding-right: 5px; padding-left: 5px;}
+	.form-sign-up-filds .col-md-11{padding: 0;}
+}
+@media (max-width:375px){
+}

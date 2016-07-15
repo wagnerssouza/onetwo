@@ -1,0 +1,59 @@
+.aguardando, .cancelada{display: none;}
+.aguardando-resposta{background: #ebebeb;text-align: center;font-size: 18px;padding: 10px 0;margin: 20px 0 40px 0;}
+.aguardando-resposta .solicitacao-reserva{color: #000;font-weight: bold;margin: 0;}
+.reserva-cancelada{background: #ffc8c8;text-align: left;font-size: 18px;padding: 10px 0;margin: 20px 0 40px 0;}
+.reserva-cancelada .texto-reserva-cancelada{color: #584343;margin: 0;padding: 2%;}
+.tamanho {background: #EBEBEB;padding: 15px;display: inline-block;font-weight: bold;text-transform: uppercase;margin: 0;}
+.onde-retirar{margin: 0;padding: 0;}
+.onde-retirar-header {background: #5F009B;width: 100%;float: left;padding: 20px 0;}
+.lista-informacoes-reserva{list-style-type: none;margin: 0;}
+.lista-informacoes-reserva li{color: #fff;}
+.lista-informacoes-reserva li p{margin: 0;padding: 0;font-size: 18px;}
+.box-como-chegar{text-align: center;}
+.como-chegar {border: 1px #FFF solid;color: #FFF !important;border-radius: 5px;padding: 15px 40px;margin-top: 25px;text-decoration: none !important;display: inline-block;}
+.como-chegar:hover{text-decoration: none;}
+#mapa-loja-reserva {width: 100%; height: 100%;position: absolute; left: 0;}
+.mapa-loja{position: relative;float: left;width: 100%;height: 200px;}
+.produto-reservado{background: #fff9bf;text-align: center;font-size: 18px;padding: 10px 0;margin: 20px 0 20px 0;}
+.mensagem-lojista{;text-align: center;font-size: 18px;padding: 0;margin: 0px 0 20px 0;}
+
+.texto-produto-reservado{text-align: left;}
+.texto-produto-reservado.texto-small{font-size: 14px;font-weight: 400;}
+.cancelar-reserva{color: #4f007f;text-decoration: underline;}
+.cancelar-reserva:hover{color: #4f007f;text-decoration: none;}
+.tempo {width: 41px;height: 38px;display: inline-block;background-image: url(../images/reservas/icone-tempo.png);float: left;margin-right: 10px;}
+.numeros{font-size: 26px;font-weight: bold;}
+.acompanhamento-tempo{margin-top: 15px;}
+.botoes-cancelar{display: inline-block;margin-top: 20px;}
+.action-cancelar{margin: 0;padding: 0;}
+.action-cancelar li{list-style-type: none;float: left;}
+.action-cancelar li a{display: block;background: #fff;color: #4f007f;border: 1px #4f007f solid;border-radius: 5px;font-size: 14px;padding: 10px 15px;margin-right: 10px;}
+.action-cancelar li a:hover{background: #4f007f;color: #fff;text-decoration: none;}
+.texto-vendedor{
+	  text-align: left;
+  font-size: 14px;
+  background: #F0F0F0;
+  border: 1px #CCC solid;
+  padding: 25px;
+  box-sizing: border-box;
+
+}
+
+.mensagem-lojista .col-sm-2{
+	text-align: left;
+	padding: 0;
+}
+.img-loja{
+	margin-bottom: 20px;
+}
+
+@media (max-width:991px){
+    .lista-informacoes-reserva{padding: 0;}
+    .box-como-chegar{text-align: left;} 
+}
+@media (min-width:768px){
+}
+@media (max-width:767px){
+}
+@media (max-width:375px){
+}
